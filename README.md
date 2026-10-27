@@ -12,7 +12,7 @@ GitHub Pages deploys directly from **main / (root)** using **Deploy from a branc
 
 ## Content
 
-Edit `index.html` and `style.css`. Privacy, terms, and support are separate local pages, adapted from the publisher’s existing policies without changing subscription commitments. The hero and pricing buttons link to the [Chrome Web Store listing](https://chromewebstore.google.com/detail/paredo-for-quickbooks-onl/edfmgjiomglckbgdeckoifindgncdonn) supplied by the owner. Pricing reflects the project's documented 14-day no-card trial and US$24/year plan. No product screenshots are included, consistent with the owner's prior preference.
+Edit `index.html` and `style.css`. Privacy, terms, and support are separate local pages, adapted from the publisher’s existing policies without changing subscription commitments. The hero and pricing buttons link to the [Chrome Web Store listing](https://chromewebstore.google.com/detail/paredo-for-quickbooks-onl/edfmgjiomglckbgdeckoifindgncdonn) supplied by the owner. Pricing reflects the project's documented 14-day no-card trial and US$24/year plan. The homepage uses the three approved Chrome Web Store screenshots, labeled as illustrative data, with links to full-size originals.
 
 The extension is maintained separately in `dvansickle/simplify-qbo`. This repository contains no extension code, financial captures, or billing integration.
 
@@ -31,4 +31,6 @@ Audience sentence, near-top read/store/transmit explanation, price/trial/install
 
 The owner rejected an email-based signup workaround. No signup form, email-capture service, or pretend subscription has been added. A real signup needs an owner-selected provider/form endpoint and matching privacy disclosures.
 
-Screenshot: `assets/paredo-home.png` is the approved metadata-free 1280×800 illustrative Home capture from October 23 (Paredo 0.23.1). The source is the extension project’s ignored `captures/2026-10-23/illustrative/01-home.png`. It shows a real captured layout with fictional replacements, not a generated UI. Never present another screen or fabricated clutter as its “before.” Capture the same screen, viewport, state, and fictional/sample data with Paredo off/on for the requested comparison. No live QBO tab was available during this update.
+Screenshots: `assets/paredo-home.png`, `assets/paredo-banking.png`, and `assets/paredo-menu.png` are the approved metadata-free 1280×800 illustrative Chrome Web Store captures from October 23 (Paredo 0.23.1). The source is the extension project’s ignored `captures/2026-10-23/illustrative/01-home.png`. It shows a real captured layout with fictional replacements, not a generated UI. Never present another screen or fabricated clutter as its “before.” Capture the same screen, viewport, state, and fictional/sample data with Paredo off/on for the requested comparison. No live QBO tab was available during this update.
+
+October 27: owner requested using the Store screenshots for now. All three are displayed as product views; a before/after comparison is deferred. No raw or rejected masked images are published.
