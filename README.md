@@ -1,6 +1,6 @@
 # Paredo website
 
-A small static public website for Paredo for QuickBooks Online, by Spring Harbor Studios. No build step, JavaScript, external fonts, tracking, or application dependencies.
+A small static public website for Paredo for QuickBooks Online, by Spring Harbor Studios. No build step, executable JavaScript, external fonts, tracking, or application dependencies.
 
 ## Preview
 
@@ -12,7 +12,7 @@ GitHub Pages deploys directly from **main / (root)** using **Deploy from a branc
 
 ## Content
 
-Edit `index.html` and `style.css`. Privacy, terms, and support link to the existing Spring Harbor Studios pages. The hero and pricing buttons link to the [Chrome Web Store listing](https://chromewebstore.google.com/detail/paredo-for-quickbooks-onl/edfmgjiomglckbgdeckoifindgncdonn) supplied by the owner. Pricing reflects the project's documented 14-day no-card trial and US$24/year plan. No product screenshots are included, consistent with the owner's prior preference.
+Edit `index.html` and `style.css`. Privacy, terms, and support are separate local pages, adapted from the publisher’s existing policies without changing subscription commitments. The hero and pricing buttons link to the [Chrome Web Store listing](https://chromewebstore.google.com/detail/paredo-for-quickbooks-onl/edfmgjiomglckbgdeckoifindgncdonn) supplied by the owner. Pricing reflects the project's documented 14-day no-card trial and US$24/year plan. No product screenshots are included, consistent with the owner's prior preference.
 
 The extension is maintained separately in `dvansickle/simplify-qbo`. This repository contains no extension code, financial captures, or billing integration.
 
@@ -23,4 +23,12 @@ The extension is maintained separately in `dvansickle/simplify-qbo`. This reposi
 
 Shared editorial styles live in `articles.css`. Both articles are linked from the homepage and each other, have unique titles/descriptions and canonical URLs, and appear in `sitemap.xml`. `robots.txt` points to the sitemap. No ranking, keyword-volume, or conversion claims are made.
 
-Comparison research checked October 27, 2026: https://righttool.app/free-vs-pro-features/ and https://righttool.app/pro/. The former carries an older version date, disclosed on the page. Competitor scope comes from published documentation, not hands-on testing. Review these facts when updating the comparison. The linked Dulait X post could not be retrieved; page order follows the owner’s supplied summary, with no attributed quotes or claimed keyword research.
+Comparison research checked October 27, 2026: https://righttool.app/free-vs-pro-features/ and https://righttool.app/pro/. The former carries an older version date, disclosed on the page. Competitor scope comes from published documentation, not hands-on testing. Review these facts when updating the comparison. The full Dulait article was supplied October 27. Its software sequence puts alternatives and comparisons first; problem pages come later. Existing URLs remain; there is no basis to claim measured demand, low difficulty, rankings, or results.
+
+## Homepage checklist and remaining inputs
+
+Audience sentence, near-top read/store/transmit explanation, price/trial/install CTA, explicit support email, suitability guidance with RightTool referral, and separate policy/support pages are implemented.
+
+The owner rejected an email-based signup workaround. No signup form, email-capture service, or pretend subscription has been added. A real signup needs an owner-selected provider/form endpoint and matching privacy disclosures.
+
+Screenshot: `assets/paredo-home.png` is the approved metadata-free 1280×800 illustrative Home capture from October 23 (Paredo 0.23.1). The source is the extension project’s ignored `captures/2026-10-23/illustrative/01-home.png`. It shows a real captured layout with fictional replacements, not a generated UI. Never present another screen or fabricated clutter as its “before.” Capture the same screen, viewport, state, and fictional/sample data with Paredo off/on for the requested comparison. No live QBO tab was available during this update.
