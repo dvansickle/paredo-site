@@ -12,6 +12,6 @@ GitHub Pages deploys directly from **main / (root)** using **Deploy from a branc
 
 ## Content
 
-Edit `index.html` and `style.css`. Privacy, terms, and support link to the existing Spring Harbor Studios pages. The site intentionally has no unverified Store install link. Add the verified public listing after publication is confirmed. Pricing reflects the project's documented 14-day no-card trial and US$24/year plan. No product screenshots are included, consistent with the owner's prior preference.
+Edit `index.html` and `style.css`. Privacy, terms, and support link to the existing Spring Harbor Studios pages. The hero and pricing buttons link to the [Chrome Web Store listing](https://chromewebstore.google.com/detail/paredo-for-quickbooks-onl/edfmgjiomglckbgdeckoifindgncdonn) supplied by the owner. Pricing reflects the project's documented 14-day no-card trial and US$24/year plan. No product screenshots are included, consistent with the owner's prior preference.
 
 The extension is maintained separately in `dvansickle/simplify-qbo`. This repository contains no extension code, financial captures, or billing integration.
