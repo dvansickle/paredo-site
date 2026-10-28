@@ -1,6 +1,6 @@
 # Paredo website
 
-A small static public website for Paredo for QuickBooks Online, by Spring Harbor Studios. No build step, executable JavaScript, external fonts, tracking, or application dependencies.
+A small static public website for Paredo for QuickBooks Online, by Spring Harbor Studios. No build step, external fonts, or application dependencies. The public website uses Google Analytics; the extension remains free of analytics.
 
 ## Preview
 
@@ -34,3 +34,7 @@ The owner rejected an email-based signup workaround. No signup form, email-captu
 Screenshots: `assets/paredo-home.png`, `assets/paredo-banking.png`, and `assets/paredo-menu.png` are the approved metadata-free 1280×800 illustrative Chrome Web Store captures from October 23 (Paredo 0.23.1). The source is the extension project’s ignored `captures/2026-10-23/illustrative/01-home.png`. It shows a real captured layout with fictional replacements, not a generated UI. Never present another screen or fabricated clutter as its “before.” Capture the same screen, viewport, state, and fictional/sample data with Paredo off/on for the requested comparison. No live QBO tab was available during this update.
 
 October 27: owner requested using the Store screenshots for now. All three are displayed as product views; a before/after comparison is deferred. No raw or rejected masked images are published.
+
+## Website analytics
+
+Owner-authorized Google Analytics 4 tag `G-GZ1MDJ3MHT` is installed once in the head of all six HTML pages. Add the same tag to any new public page. The homepage summary and privacy policy distinguish website measurement from extension-local QBO processing. There are no custom analytics events, form capture, or extension changes in this setup. Verify incoming visits in the property’s Realtime report after deployment; blockers and browser settings may prevent collection.
