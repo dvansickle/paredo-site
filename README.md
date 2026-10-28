@@ -37,6 +37,10 @@ October 27: owner requested using the Store screenshots for now. All three are d
 
 ## Website analytics
 
-Owner-authorized Google Analytics 4 tag `G-GZ1MDJ3MHT` is installed once in the head of all six HTML pages. Add the same tag to any new public page. The homepage summary and privacy policy distinguish website measurement from extension-local QBO processing. There are no custom analytics events, form capture, or extension changes in this setup. Verify incoming visits in the property’s Realtime report after deployment; blockers and browser settings may prevent collection.
+Owner-authorized Google Analytics 4 tag `G-GZ1MDJ3MHT` is installed once in the head of all eight HTML pages. Add the same tag to any new public page. The homepage summary and privacy policy distinguish website measurement from extension-local QBO processing. There are no custom analytics events, form capture, or extension changes in this setup. Verify incoming visits in the property’s Realtime report after deployment; blockers and browser settings may prevent collection.
 
 October 28: added homepage install links in the navigation, after the screenshot gallery, and after related reading. Existing hero/pricing links and trial terms are preserved. All install links use the same Chrome Web Store listing; no new tracking or extension behavior.
+
+October 28: added ads/pop-ups and Home dashboard guides, with official Intuit sources, approved illustrative screenshots, install/trial calls to action, homepage links and sitemap entries. Updated the existing problem guide to address simplifying QuickBooks without changing its URL. Native instructions are documentation-based, not fresh live QBO validation; no rankings, volume or conversion outcomes established.
+
+Validation: all eight pages pass local asset/link/fragment, single H1/canonical, single existing analytics tag, sitemap and whitespace checks. New guide previews were inspected at 375px and 1280px; neither had horizontal overflow. Publication does not establish indexing or search performance.
