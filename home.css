@@ -1,0 +1,74 @@
+/* Homepage refinement; shared article and policy layouts retain their styles. */
+.homepage{font-size:16px;line-height:1.5}
+.homepage h1,.homepage h2,.homepage h3{text-wrap:balance}
+.homepage p,.homepage dd{text-wrap:pretty}
+.homepage .hero{padding-top:48px}
+.homepage h1{max-width:800px;font-size:clamp(58px,6vw,80px);margin:24px 0 32px}
+.homepage .audience-line{font-size:20px;line-height:1.5;max-width:680px;margin:0 0 24px}
+.homepage .hero-bottom{display:block}
+.homepage .button{font-size:16px;font-weight:600;line-height:24px;padding:12px 24px;gap:24px}
+.homepage .nav-install{font-size:14px;line-height:20px;padding:12px 16px;gap:16px}
+.homepage .hero-offer{font-size:14px;line-height:20px;margin-top:16px;max-width:680px}
+.homepage .hero-assurance{font-size:14px;line-height:20px;color:var(--muted);margin-top:16px;max-width:680px}
+.homepage .eyebrow,.homepage .number{font-size:12px;line-height:16px}
+.homepage .product-view{padding-top:48px}
+.homepage .product-view h2{font-size:36px;line-height:40px;max-width:680px}
+.homepage .gallery-intro{font-size:16px;line-height:24px;margin-top:16px}
+.homepage .product-view figcaption,.homepage .gallery-note{font-size:14px;line-height:20px}
+.homepage .screenshot-gallery{gap:32px;margin-top:24px}
+.homepage .screenshot-gallery .gallery-home{max-width:960px;justify-self:center}
+.homepage .experience{margin-top:64px;padding:64px 0}
+.homepage .features{gap:32px;margin-top:40px}
+.homepage .features p,.homepage .coverage p{font-size:16px;line-height:24px}
+.homepage .coverage h3{font-size:20px;line-height:28px}
+.homepage .small{font-size:14px!important;line-height:20px}
+.homepage .text-link{font-size:14px;line-height:20px}
+.setup{padding:64px 0}
+.setup h2{margin-top:16px}
+.setup-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;padding:0;list-style:none;counter-reset:steps;margin:32px 0 0}
+.setup-steps li{counter-increment:steps}
+.setup-steps li::before{content:"0" counter(steps);display:block;font-size:14px;color:var(--muted);margin-bottom:16px}
+.setup-steps h3{font-size:24px;line-height:32px;margin-bottom:12px}
+.setup-steps p{color:var(--muted)}
+.homepage .data-summary{padding:48px 0 64px;border-top:1px solid var(--line);border-bottom:0;gap:48px}
+.homepage .data-heading h2{font-size:36px;line-height:40px}
+.data-intro{margin-top:24px;color:var(--muted)}
+.homepage .data-summary dt{font-size:16px;line-height:24px}
+.homepage .data-summary dd{font-size:16px;line-height:24px}
+.homepage .data-summary dl>div+div{margin-top:24px}
+.homepage .pricing{gap:48px;padding:64px 0}
+.homepage .price-box .button{margin-top:24px}
+.faq{padding:0 0 48px}
+.faq h2{margin:16px 0 32px}
+.faq-list{max-width:800px}
+.faq details{border-bottom:1px solid var(--line);padding:20px 0}
+.faq summary{font-size:18px;line-height:28px;font-weight:600;cursor:pointer}
+.faq summary:hover{color:#667d37}
+.faq summary:focus-visible{outline:3px solid #6c823d;outline-offset:6px}
+.faq details p{margin-top:16px;color:var(--muted)}
+.homepage .final-install{background:var(--accent);border:0;border-radius:8px;margin-top:0;padding:40px}
+.homepage .final-install p{font-size:14px;line-height:20px}
+.homepage .reading{padding-top:48px}
+.homepage .reading h2{font-size:24px;line-height:32px;letter-spacing:-.6px;margin:16px 0}
+.homepage .reading-links{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.homepage .reading-links h3{font-size:18px;line-height:28px;letter-spacing:0}
+.homepage .reading-links p{font-size:14px;line-height:20px}
+.support-note{padding-top:32px;color:var(--muted)}
+.support-note p+p{margin-top:12px}
+.homepage footer>p{font-size:12px;line-height:16px}
+.homepage .button:active,.not-found .button:active{transform:translateY(1px)}
+.not-found{padding-top:64px;padding-bottom:64px}
+.not-found h1{font-size:clamp(40px,7vw,72px);letter-spacing:-2px}
+.not-found .button{margin:32px 0}
+@media(max-width:760px){
+ .homepage .header{gap:16px}.homepage .header nav{gap:16px}.homepage nav>a[href^="mailto:"]{display:none}
+ .homepage .hero{padding-top:32px}.homepage h1{font-size:clamp(36px,8.4vw,60px);letter-spacing:-2px}.homepage h1 em{letter-spacing:-2px}
+ .homepage .audience-line{font-size:18px;line-height:28px}.homepage .hero-bottom .button{margin-top:0}
+ .homepage .product-view{padding-top:32px}.homepage .product-view h2,.homepage .data-heading h2{font-size:30px;line-height:36px;letter-spacing:-1px}
+ .homepage .experience{margin-top:40px;padding:40px 0}.homepage .section-heading{gap:24px}.homepage .features{gap:32px}
+ .setup{padding:40px 0}.setup-steps{grid-template-columns:1fr;gap:32px}
+ .homepage .data-summary{gap:32px;padding:40px 0}.homepage .pricing{gap:32px;padding:40px 0}
+ .homepage .reading-links{grid-template-columns:1fr;gap:8px}.homepage .final-install{padding:32px 24px}
+ .homepage .footer-top{flex-wrap:wrap}.homepage .header .brand{font-size:24px}
+}
+@media(max-width:400px){.homepage .header nav>a[href="#pricing"]{display:none}.homepage .header{flex-wrap:nowrap}.homepage .header nav{flex-wrap:nowrap}.homepage .nav-install{padding:8px 12px;gap:12px}}
