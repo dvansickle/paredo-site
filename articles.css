@@ -8,3 +8,6 @@
 
 /* Approved Chrome Web Store screenshots: full Home view and two supporting views. */
 .gallery-intro{color:var(--muted);margin-top:18px;max-width:700px}.screenshot-gallery{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:30px;margin-top:28px}.screenshot-gallery .gallery-home{grid-column:1/-1}.screenshot-gallery figure{margin:0;min-width:0}.screenshot-gallery a:has(img){display:block;border-radius:8px}.screenshot-gallery img{transition:none}.gallery-note{font-size:12px;color:var(--muted);margin-top:24px;max-width:800px}@media(max-width:760px){.screenshot-gallery{grid-template-columns:minmax(0,1fr);gap:28px}}
+
+/* Explicit home navigation on support and policy pages. */
+.home-return{display:inline-flex;align-items:center;gap:10px;padding:11px 17px;border:1px solid var(--line);border-radius:5px;background:var(--white);font-size:15px;font-weight:600;text-decoration:none;margin-bottom:8px}.home-return:hover{background:var(--accent);border-color:#a4b37e}
