@@ -34,8 +34,8 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="articles.css">
 <link rel="stylesheet" href="home.css">
-<link rel="stylesheet" href="comparisons.css?v=4">
-<script defer src="comparisons.js?v=2"></script>
+<link rel="stylesheet" href="comparisons.css?v=5">
+<script defer src="comparisons.js?v=3"></script>
 <link rel="canonical" href="https://getparedo.app/">
 </head>
 <body class="homepage">
@@ -54,15 +54,29 @@
 <p class="hero-assurance">Your accounting records stay unchanged. No QuickBooks page content is sent to us. <a href="#data-title">How your data is handled</a></p>
 </section>
 
-<section class="wrap product-view" aria-labelledby="product-title"><p class="eyebrow">See Paredo in use</p><h2 id="product-title">A few things Paredo<br>gets out of your way.</h2><p class="gallery-intro">Lending pitches, add-on offers, and suggestions. Here are real examples from QuickBooks Home that Paredo can hide.</p>
+<section class="wrap product-view" aria-labelledby="product-title"><p class="eyebrow">See Paredo in action</p><h2 id="product-title">Your menu.<br>A little less in the way.</h2><p class="gallery-intro">Follow the highlighted Home setting to see what Paredo hides. Your choices stay in your hands.</p>
 <div class="paredo-examples" id="comparisons">
+<div class="noise-workbench">
+<aside class="menu-guide" aria-label="Illustration of Paredo Home settings"><div class="menu-guide-header"><img src="assets/icon.png" width="28" height="28" alt=""><div><strong>Paredo</strong><span>Home menu guide</span></div><span class="menu-on">On</span></div><p class="menu-screen">Home</p><ul class="menu-options">
+<li class="menu-context"><span>Show apps</span><span class="menu-switch" aria-hidden="true"></span></li>
+<li class="menu-context"><span>Show QBO toolbar</span><span class="menu-switch" aria-hidden="true"></span></li>
+<li data-menu-setting="lending" class="menu-example is-current"><button type="button" data-menu-example="0" disabled aria-pressed="true" aria-label="View examples for Show Lending offers"><span>Show Lending offers</span><span class="menu-switch" aria-hidden="true"></span></button></li>
+<li data-menu-setting="suggestions" class="menu-example"><button type="button" data-menu-example="1" disabled aria-pressed="false" aria-label="View examples for Show Suggestions for you"><span>Show Suggestions for you</span><span class="menu-switch" aria-hidden="true"></span></button></li>
+<li class="menu-context"><span>Show Mileage card</span><span class="menu-switch" aria-hidden="true"></span></li>
+<li class="menu-context"><span>Show My integrations card</span><span class="menu-switch" aria-hidden="true"></span></li>
+<li class="menu-context"><span>Show “Is this helpful?” prompts</span><span class="menu-switch" aria-hidden="true"></span></li>
+<li class="menu-context"><span>Hide inactive accounts</span><span class="menu-switch switch-on" aria-hidden="true"></span></li>
+</ul><p class="menu-guide-note">Example settings. The highlighted option controls the current example.</p></aside>
+<div class="noise-demo">
+
 <div class="noise-controls" hidden data-noise-controls><p id="noise-status" aria-live="polite">01 / 03 · Lending pitches</p><div class="noise-arrows"><button type="button" id="noise-prev" aria-label="Previous example">←</button><button type="button" id="noise-next" aria-label="Next example">→</button></div></div>
 <div class="noise-track" id="noise-track" tabindex="0" role="region" aria-label="Examples of clutter Paredo can hide. Swipe or use the arrow keys to browse.">
-<figure class="noise-slide" data-title="Lending pitches"><div class="noise-image"><img src="assets/comparisons/lending-detail.png?v=3" width="352" height="316" alt="QuickBooks Home lending card offering a term loan and a line of credit. Limits are illustrative." loading="lazy"></div><figcaption><p class="eyebrow">Lending pitches</p><h3>Your dashboard.<br>Without the funding pitch.</h3><p>A lending card takes up space with loan and credit offers. Paredo can tuck it away.</p><p class="noise-choice">Hidden with Paredo. Reveal it whenever you need it.</p></figcaption></figure>
-<figure class="noise-slide" data-title="Payroll upsells"><div class="noise-image"><img src="assets/comparisons/payroll-detail.png?v=3" width="352" height="316" alt="QuickBooks Home add-on card advertising payroll with a Try free for 30 days action." loading="lazy"></div><figcaption><p class="eyebrow">Payroll upsells</p><h3>Keep your books.<br>Skip the sales pitch.</h3><p>The Suggestions for you section can include offers for additional services, like this payroll add-on.</p><p class="noise-choice">Hidden with Paredo. Reveal the suggestions section whenever you need it.</p></figcaption></figure>
-<figure class="noise-slide" data-title="Suggestions"><div class="noise-image"><img src="assets/comparisons/suggestion-detail.png?v=3" width="352" height="316" alt="QuickBooks Home suggestion card with a product video, Add products. See where you stand headline, and See how action." loading="lazy"></div><figcaption><p class="eyebrow">Suggestions</p><h3>A tip when you want it.<br>Room when you don’t.</h3><p>Product tips and recommendations can wait while you focus on your bookkeeping.</p><p class="noise-choice">Hidden with Paredo. Reveal the suggestions section whenever you need it.</p></figcaption></figure>
+<figure class="noise-slide" data-title="Lending pitches" data-setting="lending"><div class="noise-image"><img src="assets/comparisons/lending-detail.png?v=3" width="352" height="316" alt="QuickBooks Home lending card offering a term loan and a line of credit. Limits are illustrative." loading="lazy"></div><figcaption><p class="eyebrow">Lending pitches</p><h3>Your dashboard.<br>Without the funding pitch.</h3><p>A lending card takes up space with loan and credit offers. Paredo can tuck it away.</p><p class="noise-choice">Controlled by <strong>Show Lending offers</strong>. Turn it on whenever you want the card back.</p></figcaption></figure>
+<figure class="noise-slide" data-title="Payroll upsells" data-setting="suggestions"><div class="noise-image"><img src="assets/comparisons/payroll-detail.png?v=3" width="352" height="316" alt="QuickBooks Home add-on card advertising payroll with a Try free for 30 days action." loading="lazy"></div><figcaption><p class="eyebrow">Payroll upsells</p><h3>Keep your books.<br>Skip the sales pitch.</h3><p>The Suggestions for you section can include offers for additional services, like this payroll add-on.</p><p class="noise-choice">Controlled by <strong>Show Suggestions for you</strong>. Turn it on to reveal the section again.</p></figcaption></figure>
+<figure class="noise-slide" data-title="Suggestions" data-setting="suggestions"><div class="noise-image"><img src="assets/comparisons/suggestion-detail.png?v=3" width="352" height="316" alt="QuickBooks Home suggestion card with a product video, Add products. See where you stand headline, and See how action." loading="lazy"></div><figcaption><p class="eyebrow">Suggestions</p><h3>A tip when you want it.<br>Room when you don’t.</h3><p>Product tips and recommendations can wait while you focus on your bookkeeping.</p><p class="noise-choice">Controlled by <strong>Show Suggestions for you</strong>. Turn it on to reveal the section again.</p></figcaption></figure>
 </div>
 <div class="noise-selectors" role="group" aria-label="Choose an example" hidden data-noise-controls><button type="button" data-example="0" aria-pressed="true">Lending</button><button type="button" data-example="1" aria-pressed="false">Payroll</button><button type="button" data-example="2" aria-pressed="false">Suggestions</button></div>
+</div></div>
 <p class="noise-note">Cropped from real QuickBooks Home captures with Paredo off. Lending limits are illustrative. Coverage varies by interface; important warnings remain available.</p>
 </div>
 <figure class="clean-home"><a href="assets/comparisons/home-on.png" aria-label="Open full-size Home screenshot with Paredo enabled"><img src="assets/comparisons/home-on.png" width="1280" height="800" alt="QuickBooks Home with Paredo enabled: financial cards, compact account list, and native actions remain visible. Illustrative data." loading="lazy"></a><figcaption><strong>A little more breathing room.</strong> Your familiar Home screen, with selected clutter tucked away. <a href="assets/comparisons/home-on.png">View full size ↗</a></figcaption></figure>
