@@ -77,3 +77,5 @@ The carousel uses native horizontal scrolling and scroll snap for touch/no-scrip
 Validation: JavaScript syntax, whitespace, and 194 local asset/link/fragment checks across ten HTML pages passed. Browser review at 1280px and 375px showed no page overflow; arrows, example buttons, keyboard navigation, horizontal scrolling, and resize alignment worked. Cropped assets were visually inspected and retain no image metadata. Physical-device touch gestures were not separately tested.
 
 October 30 follow-up: trimmed another 10px from each edge of all three close-ups to remove the captured outer card borders/corners. Text and actions remain intact; image dimensions and cache revisions updated. Crops visually inspected, local link/asset checks and git diff --check passed.
+
+October 30 crop refinement: reduced the extra trim from 10px to 4px per edge after owner feedback, restoring space around labels and actions. An 8px display radius masks the remaining edge artifacts. Visual inspection and local link/asset checks passed.
