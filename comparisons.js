@@ -18,8 +18,14 @@
     root.querySelectorAll('[data-menu-setting]').forEach(row => {
       const active = row.dataset.menuSetting === setting;
       row.classList.toggle('is-current', active);
-      row.querySelector('button').setAttribute('aria-pressed', String(active));
+      if (active) row.setAttribute('aria-current', 'true');
+      else row.removeAttribute('aria-current');
     });
+    const annotation = setting === 'lending'
+      ? 'This setting hides the lending card. Turn it on to bring the card back.'
+      : 'One setting hides this whole suggestions section, including payroll offers and product tips.';
+    const note = root.querySelector('#menu-annotation');
+    if (note.textContent !== annotation) note.textContent = annotation;
   }
   function select(index) {
     const next = (index + slides.length) % slides.length;
@@ -30,10 +36,6 @@
   root.querySelector('#noise-prev').addEventListener('click', () => select(current - 1));
   root.querySelector('#noise-next').addEventListener('click', () => select(current + 1));
   choices.forEach(button => button.addEventListener('click', () => select(Number(button.dataset.example))));
-  root.querySelectorAll('[data-menu-example]').forEach(button => {
-    button.disabled = false;
-    button.addEventListener('click', () => select(Number(button.dataset.menuExample)));
-  });
   track.addEventListener('keydown', event => {
     if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
     event.preventDefault();
