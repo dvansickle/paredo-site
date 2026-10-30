@@ -21,9 +21,12 @@
       if (active) row.setAttribute('aria-current', 'true');
       else row.removeAttribute('aria-current');
     });
-    const annotation = setting === 'lending'
-      ? 'This setting hides the lending card. Turn it on to bring the card back.'
-      : 'One setting hides this whole suggestions section, including payroll offers and product tips.';
+    const annotations = {
+      lending: 'This setting hides the lending card. Turn it on to bring the card back.',
+      suggestions: 'This setting hides Suggestions for you, including this payroll offer. Turn it on to bring the section back.',
+      apps: 'This setting hides the app-shortcut row on Home. Turn it on to bring the shortcuts back.'
+    };
+    const annotation = annotations[setting];
     const note = root.querySelector('#menu-annotation');
     if (note.textContent !== annotation) note.textContent = annotation;
   }
