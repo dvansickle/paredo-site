@@ -34,6 +34,8 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="articles.css">
 <link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="comparisons.css">
+<script defer src="comparisons.js"></script>
 <link rel="canonical" href="https://getparedo.app/">
 </head>
 <body class="homepage">
@@ -52,11 +54,20 @@
 <p class="hero-assurance">Your accounting records stay unchanged. No QuickBooks page content is sent to us. <a href="#data-title">How your data is handled</a></p>
 </section>
 
-<section class="wrap product-view" aria-labelledby="product-title"><p class="eyebrow">See Paredo in use</p><h2 id="product-title">Your familiar QuickBooks.<br>A little more breathing room.</h2><p class="gallery-intro">Home, Bank Transactions, and the controls that let you choose what stays.</p><div class="screenshot-gallery">
-<figure class="gallery-home"><a href="assets/paredo-home.png" aria-label="Open full-size Paredo Home screenshot"><img src="assets/paredo-home.png" width="1280" height="800" alt="QuickBooks Online Home with Paredo enabled, showing a compact account list and native financial cards. Illustrative data." fetchpriority="high"></a><figcaption><strong>Home.</strong> Read your financial cards with a compact account list and native actions still in reach. <a href="assets/paredo-home.png">View full size ↗</a></figcaption></figure>
+<section class="wrap product-view" aria-labelledby="product-title"><p class="eyebrow">See Paredo in use</p><h2 id="product-title">Less in the way.<br>See what disappears.</h2><p class="gallery-intro">Choose an example, then switch Paredo off and on to see the difference.</p><div class="paredo-comparisons" id="comparisons">
+<div class="compare-examples" role="group" aria-label="Choose a comparison" hidden data-compare-controls><button type="button" aria-pressed="true" data-slide="0">Lending offers</button><button type="button" aria-pressed="false" data-slide="1">Suggestions and add-ons</button><button type="button" aria-pressed="false" data-slide="2">A calmer Home</button></div>
+<div class="compare-panel" role="group" aria-label="Before and after screenshots">
+<div class="compare-bar"><div class="compare-title"><span id="compare-count">01 / 03</span><h3 id="compare-title">Lending offers</h3></div><button type="button" id="compare-toggle" data-on="false" aria-pressed="false" aria-label="Turn Paredo on in the comparison" hidden data-compare-controls><span class="off">Paredo off</span><span class="on">Paredo on</span></button></div>
+<div class="compare-frame"><img id="compare-before" src="assets/comparisons/lending-off.png" width="1280" height="800" alt="Native QuickBooks Home with a lending offer and the start of Suggestions for you. Illustrative data." loading="lazy"><img id="compare-after" src="assets/comparisons/promotions-on.png" width="1280" height="800" aria-hidden="true" alt="QuickBooks Home with Paredo on: lending and suggestions hidden, financial cards retained. Illustrative data." loading="lazy"></div>
+<div class="compare-footer"><p id="compare-caption" aria-live="polite">A lending card offers a term loan and a line of credit on Home.</p><div class="compare-arrows" hidden data-compare-controls><button type="button" id="compare-prev" aria-label="Previous example">←</button><button type="button" id="compare-next" aria-label="Next example">→</button></div></div></div>
+<div class="compare-notes"><p>Real Home captures · Paredo 0.23.1 · Illustrative names, figures, and chart data.</p><a id="compare-full" href="assets/comparisons/lending-off.png" target="_blank" rel="noopener">Open current image full size ↗</a></div>
+<p id="compare-context" class="compare-context">Paredo removes sections and reflows Home. The lower-page views show different content, rather than a pixel-aligned wipe.</p>
+<noscript><p class="compare-context">JavaScript is off. <a href="assets/comparisons/promotions-on.png">View Home with Paredo on</a> to compare with the native screenshot above.</p></noscript>
+</div><div class="screenshot-gallery">
+
 <figure><a href="assets/paredo-banking.png" aria-label="Open full-size Bank Transactions screenshot"><img src="assets/paredo-banking.png" width="1280" height="800" alt="Bank Transactions with Paredo enabled, showing Posted transactions, account selector, filters, and Pending, Posted, and Excluded tabs. Illustrative data." loading="lazy"></a><figcaption><strong>Bank Transactions.</strong> Keep the account picker, filters, and Pending, Posted, and Excluded tabs in reach above a focused table. <a href="customize-quickbooks-bank-transactions/">Customize your Bank Transactions view →</a> <a href="assets/paredo-banking.png">View full size ↗</a></figcaption></figure>
 <figure><a href="assets/paredo-menu.png" aria-label="Open full-size Paredo settings screenshot"><img src="assets/paredo-menu.png" width="1280" height="800" alt="Paredo Home menu with the screen on/off switch and visibility options for the toolbar, offers, optional cards, and inactive accounts. Illustrative data." loading="lazy"></a><figcaption><strong>Your choices.</strong> Choose which optional cards and controls appear, or switch Paredo off for the screen. <a href="assets/paredo-menu.png">View full size ↗</a></figcaption></figure>
-</div><p class="gallery-note">The same screenshots used in our Chrome Web Store listing, captured with Paredo 0.23.1. Identifying details and financial values have been replaced with illustrative data.</p></section>
+</div><p class="gallery-note">Bank Transactions and settings screenshots from our Chrome Web Store listing, captured with Paredo 0.23.1. The Home comparisons were captured October 30, 2026. Identifying details, financial figures, and chart data are illustrative. Important warnings remain available.</p></section>
 <section class="experience" id="experience">
 <div class="wrap"><div class="section-heading"><p class="eyebrow">A little less in the way</p><h2>Your books deserve<br>your attention.</h2><p>The clutter around them doesn’t. Paredo makes small, considered changes to selected QuickBooks Online screens.</p></div>
 <div class="features">

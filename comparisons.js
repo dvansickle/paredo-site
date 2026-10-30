@@ -1,0 +1,16 @@
+(() => {
+'use strict';
+
+const slides=[
+{title:'Lending offers',before:'lending-off',after:'promotions-on',off:'A lending card offers a term loan and a line of credit on Home.',on:'The lending card and suggestions are hidden. Financial cards and the Needs attention card remain available.',context:'These captures show the lower portion of Home. Paredo removes sections and reflows the page, so the views are framed around different content rather than aligned for a sliding wipe.',alt:'Native QuickBooks Home with a lending offer and the start of Suggestions for you. Illustrative data.'},
+{title:'Suggestions and add-ons',before:'suggestions-off',after:'promotions-on',off:'Suggestions for you includes a product tip and a payroll add-on offer.',on:'The suggestions section is hidden along with the lending card. The page ends after the retained financial cards.',context:'The same Paredo-on capture is used for both promotion examples: lending and suggestions were hidden together. Native and simplified Home have different page lengths.',alt:'Native QuickBooks Home with Suggestions for you, a product tip, and a payroll add-on. Illustrative data.'},
+{title:'A calmer Home',before:'home-off',after:'home-on',off:'The native toolbar, app shortcuts, and expanded account list fill more of the first screen.',on:'Paredo tucks away the toolbar and app shortcuts, compacts the account list, and gives financial cards more room.',context:'Both views start at the top of Home at the same 1280 × 800 viewport, in the same company. This shows the combined layout changes with the selected visibility settings.',alt:'Native QuickBooks Home with its toolbar, app shortcuts, and full account list. Illustrative data.'}
+];let current=0,on=false;
+const root=document.getElementById('comparisons');
+const $=id=>root.querySelector('#compare-'+id);
+root.querySelectorAll('[data-compare-controls]').forEach(el=>el.hidden=false);
+function render(){const s=slides[current];$('title').textContent=s.title;$('count').textContent=`0${current+1} / 03`;$('before').src=`assets/comparisons/${s.before}.png`;$('before').alt=s.alt;$('after').src=`assets/comparisons/${s.after}.png`;$('after').alt=current===2?'QuickBooks Home with Paredo on: compact account list, hidden toolbar and app shortcuts. Illustrative data.':'QuickBooks Home with Paredo on: lending and suggestions hidden, financial cards retained. Illustrative data.';$('before').setAttribute('aria-hidden',String(on));$('after').setAttribute('aria-hidden',String(!on));$('toggle').dataset.on=String(on);$('toggle').setAttribute('aria-pressed',String(on));$('toggle').setAttribute('aria-label',`Turn Paredo ${on?'off':'on'} in the comparison`);$('caption').textContent=on?s.on:s.off;$('context').textContent=s.context;$('full').href=`assets/comparisons/${on?s.after:s.before}.png`;root.querySelectorAll('[data-slide]').forEach(b=>b.setAttribute('aria-pressed',String(Number(b.dataset.slide)===current)));}
+function select(i){current=(i+slides.length)%slides.length;on=false;render();}
+root.querySelectorAll('[data-slide]').forEach(b=>b.addEventListener('click',()=>select(Number(b.dataset.slide))));$('toggle').addEventListener('click',()=>{on=!on;render()});$('prev').addEventListener('click',()=>select(current-1));$('next').addEventListener('click',()=>select(current+1));render();
+
+})();
