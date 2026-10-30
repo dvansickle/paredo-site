@@ -20,6 +20,7 @@ The extension is maintained separately in `dvansickle/simplify-qbo`. This reposi
 
 - `/righttool-alternative/`: comparison for visitors considering a narrower alternative; acknowledges RightTool’s broader workflow capabilities and free edition.
 - `/quickbooks-online-too-complicated/`: problem-led guide distinguishing clutter, navigation, and accounting questions.
+- `/customize-quickbooks-bank-transactions/`: native column settings, account/tab/filter context, and Paredo’s supported banking display options.
 
 Shared editorial styles live in `articles.css`. The comparison remains linked from the problem guide and related articles; the homepage focuses on Paredo and links to the problem guides. Both original articles have unique titles/descriptions and canonical URLs, and appear in `sitemap.xml`. `robots.txt` points to the sitemap. No ranking, keyword-volume, or conversion claims are made.
 
@@ -52,3 +53,9 @@ Applied the supplied landing-page-design framework selectively, retaining Paredo
 The primary argument ends with installation, followed by compact guides/support. The separate RightTool comparison page is retained and remains discoverable through the problem guide, other articles, and sitemap. No fabricated testimonial, metric, or before/after evidence was added. A true matched before/after still requires new approved captures.
 
 Validation: all nine HTML pages passed 165 local link/asset/fragment checks, unique ID checks, existing analytics presence, homepage section order and comparison retention checks. Browser review covered 375px, 768px and 1440px widths without horizontal overflow, FAQ expansion, and the branded 404 recovery page. Full install/payment flows and social-platform preview caches were not exercised. No extension files changed.
+
+## October 29, 2026 — Bank Transactions guide
+
+Added `/customize-quickbooks-bank-transactions/` with native column guidance linked to Intuit’s banking-page documentation, practical account/tab/filter checks, the approved illustrative banking screenshot, exact Paredo account-card/toolbar/restore control labels, scope and privacy answers, and existing install/trial terms. Linked from the homepage banking caption and the general simplification guide; added to the sitemap. Unique title, description, canonical, Open Graph and Twitter image metadata are included. The existing website analytics tag is retained. Native guidance is documentation-based, not fresh live QBO validation; matching before/after captures remain deferred. No extension changes or new tracking.
+
+Validation: all ten HTML pages passed 189 local link/asset/fragment checks, plus single H1/description/analytics checks and nine unique canonical sitemap entries. The new guide was reviewed at 375px and 1280px without horizontal overflow; the approved banking image loaded and its full-size link worked. `git diff --check` passed. Publication does not establish indexing or search performance.

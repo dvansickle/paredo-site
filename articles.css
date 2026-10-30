@@ -14,3 +14,11 @@
 
 /* Product evidence in practical guides. */
 .guide-image{margin:28px 0}.guide-image img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:7px}.guide-image figcaption{font-size:12px;color:var(--muted);margin-top:12px}.guide-image a{display:inline-block}
+
+/* Banking guide readability without changing existing article layouts. */
+.banking-guide .article-header h1{text-wrap:balance;font-size:clamp(36px,4.5vw,60px)}
+.banking-guide .article section h3{font-size:20px;line-height:28px;margin:24px 0 12px}
+.banking-guide .article p{text-wrap:pretty}
+.banking-guide .article-byline,.banking-guide .guide-image figcaption{font-size:14px;line-height:20px}
+.banking-guide .button{font-size:16px;font-weight:600}
+.banking-guide .related-reading>a{display:block}
