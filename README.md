@@ -1,6 +1,6 @@
 # Paredo website
 
-A small static public website for Paredo for QuickBooks Online, by Spring Harbor Studios. No build step, external fonts, or application dependencies. The public website uses Google Analytics; the extension remains free of analytics.
+A small static public website for Paredo for QuickBooks Online, by Spring Harbor Studios. No build step, external fonts, or application dependencies. The public website uses Google Analytics and landing-page PostHog analytics; the extension remains free of analytics.
 
 ## Preview
 
@@ -87,3 +87,11 @@ Validation: local asset/link/fragment checks (195 across ten HTML pages), JavaSc
 October 30 approved refinement: replaced the full interactive menu with the discussed two-row, annotated excerpt. All three captured examples remain: lending, payroll, and suggestions. Lending highlights Show Lending offers; the other two highlight Show Suggestions for you, with an annotation explaining that it controls the whole section. Menu switches/rows are non-interactive illustrations; arrows, swipe, keyboard and example buttons remain the navigation. Removed unrelated menu rows and repeated per-slide setting copy. Browser checks confirmed all three mappings, no menu buttons, and no horizontal overflow at desktop/phone widths. Syntax, link/asset and whitespace checks passed.
 
 October 30 unique-example refinement: replaced the second Suggestions example (product tip) with a crop of Home’s native app-shortcut row. The three examples now map one-to-one to Show Lending offers, Show Suggestions for you (payroll offer), and Show apps. The third crop shows the captured Accounting and Expenses & Pay Bills shortcuts; it is not a recreated interface. Added the corresponding third illustrated menu row and unique annotation, retaining non-interactive menu switches. Removed the superseded product-tip crop. All three mappings were verified in the browser, with no horizontal page overflow at 1280px/375px. Link/asset, JavaScript syntax, and whitespace checks passed. No extension or analytics changes.
+
+## October 30, 2026 — Landing-page PostHog
+
+Owner-authorized PostHog US project added to the homepage through `assets/posthog.js`. Measures `$pageview`, `$pageleave`, and `chrome_store_clicked` with a `location` property for navigation, hero, pricing and final buttons. Existing GA4 remains unchanged. Runs only on getparedo.app; local previews do not send PostHog events. Autocapture, session replay, heatmaps, surveys, error/performance capture and person profiles are disabled. Privacy disclosures updated. No extension changes. The browser project token is intentionally public; it is not a personal API credential.
+
+Verify event delivery in PostHog Live events after publication; Store clicks measure outbound intent, not completed installs or trial activation.
+
+October 31: diagnosed zero PostHog events. The prepared integration existed only as uncommitted work in the original checkout; production HTML did not reference PostHog and `/assets/posthog.js` returned 404. Merged the prepared integration and privacy disclosures into current main, retaining the carousel and all later website work. Added focused Node tests for the production-only guard, disabled broad capture, queued Store clicks and duplicate bootstrap protection. This explains the missing historical data; deploying tracking does not recover prior visits. The original checkout was not reset or overwritten.
