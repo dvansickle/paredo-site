@@ -95,3 +95,7 @@ Owner-authorized PostHog US project added to the homepage through `assets/postho
 Verify event delivery in PostHog Live events after publication; Store clicks measure outbound intent, not completed installs or trial activation.
 
 October 31: diagnosed zero PostHog events. The prepared integration existed only as uncommitted work in the original checkout; production HTML did not reference PostHog and `/assets/posthog.js` returned 404. Merged the prepared integration and privacy disclosures into current main, retaining the carousel and all later website work. Added focused Node tests for the production-only guard, disabled broad capture, queued Store clicks and duplicate bootstrap protection. This explains the missing historical data; deploying tracking does not recover prior visits. The original checkout was not reset or overwritten.
+
+## November 2, 2026 — Changelog
+
+Added `/changelog/` with newest-first notes for the 0.23.1 baseline and 0.24 trial improvements. The 0.24.1 entry explicitly records submission for review, without claiming publication. Added homepage navigation, shared footer links, and a sitemap entry. Uses existing editorial styles and the required website Google Analytics tag; no additional tracker or extension change.

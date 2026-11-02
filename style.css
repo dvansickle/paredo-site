@@ -2,3 +2,6 @@
 
 /* Install links at natural decision points, without covering page content. */
 .header nav{align-items:center}.nav-install{padding:10px 16px;gap:16px}.header .nav-install:hover{color:var(--white)}.install-prompt{display:flex;align-items:center;gap:25px;margin-top:30px}.final-install{display:flex;align-items:center;justify-content:space-between;gap:35px;border-top:1px solid var(--line);margin-top:50px;padding:45px 0}.final-install h2{font-size:32px;letter-spacing:-1px;max-width:600px}.final-install p{font-size:13px;color:var(--muted);max-width:570px;margin-top:16px}@media(max-width:760px){.header{flex-wrap:wrap;gap:16px}.header nav{flex-wrap:wrap;gap:16px}.install-prompt,.final-install{flex-direction:column;align-items:flex-start}.final-install{margin-top:30px;padding:35px 0}}
+
+/* Keep site links readable as the footer grows. */
+.footer-top>div{flex-wrap:wrap;justify-content:flex-end}
