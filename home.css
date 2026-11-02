@@ -80,5 +80,4 @@
 .clutter-checklists li{position:relative;padding:12px 0 12px 28px;border-top:1px solid #bfc8b5;font-size:16px;line-height:24px}
 .clutter-checklists li::before{content:"✓";position:absolute;left:0;color:#526b36;font-weight:700}
 .checklist-note{max-width:800px;margin-top:32px;color:var(--muted);font-size:15px;line-height:24px}
-.homepage .setup + .product-view{padding-top:0;padding-bottom:64px}
-@media(max-width:760px){.clutter-checklists{grid-template-columns:1fr;gap:32px;margin-top:32px}.homepage .setup + .product-view{padding-bottom:40px}}
+@media(max-width:760px){.clutter-checklists{grid-template-columns:1fr;gap:32px;margin-top:32px}}
