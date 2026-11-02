@@ -99,3 +99,5 @@ October 31: diagnosed zero PostHog events. The prepared integration existed only
 ## November 2, 2026 — Changelog
 
 Added `/changelog/` with newest-first notes for the 0.23.1 baseline and 0.24 trial improvements. The 0.24.1 entry explicitly records submission for review, without claiming publication. Added homepage navigation, shared footer links, and a sitemap entry. Uses existing editorial styles and the required website Google Analytics tag; no additional tracker or extension change.
+
+November 2 follow-up: owner confirmed 0.24.1 has been reviewed and published in the Chrome Web Store. Updated the changelog status and added the Store link. The November 1 entry date is retained; confirmation date is explicit rather than inferring the exact publication date.
