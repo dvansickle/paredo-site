@@ -103,3 +103,5 @@ Added `/changelog/` with newest-first notes for the 0.23.1 baseline and 0.24 tri
 November 2 follow-up: owner confirmed 0.24.1 has been reviewed and published in the Chrome Web Store. Updated the changelog status and added the Store link. The November 1 entry date is retained; confirmation date is explicit rather than inferring the exact publication date.
 
 November 2 navigation refinement: removed Changelog from the landing-page header at owner request. Footer links and the changelog page remain. Homepage local links and whitespace checks passed.
+
+November 2 coverage-first landing page: replaced the generic benefit cards with a grouped checklist of supported promotional, Home-card and secondary-control visibility options, verified against extension source. Moved the existing illustrated examples and approved screenshots below setup, retaining all image disclosures and controls. Current local Banking 0.24.x experiments are excluded from public claims. Coverage is screen/interface-dependent; warnings and unrecognized dialogs remain available. No tracking, price, trial or privacy changes.

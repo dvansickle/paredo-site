@@ -72,3 +72,13 @@
  .homepage .footer-top{flex-wrap:wrap}.homepage .header .brand{font-size:24px}
 }
 @media(max-width:400px){.homepage .header nav>a[href="#pricing"]{display:none}.homepage .header{flex-wrap:nowrap}.homepage .header nav{flex-wrap:nowrap}.homepage .nav-install{padding:8px 12px;gap:12px}}
+
+/* Concrete coverage leads; product examples follow setup. */
+.clutter-checklists{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px;margin-top:40px}
+.clutter-checklists h3{font-size:23px;line-height:30px;margin-bottom:20px}
+.clutter-checklists ul{list-style:none;padding:0;margin:0}
+.clutter-checklists li{position:relative;padding:12px 0 12px 28px;border-top:1px solid #bfc8b5;font-size:16px;line-height:24px}
+.clutter-checklists li::before{content:"✓";position:absolute;left:0;color:#526b36;font-weight:700}
+.checklist-note{max-width:800px;margin-top:32px;color:var(--muted);font-size:15px;line-height:24px}
+.homepage .setup + .product-view{padding-top:0;padding-bottom:64px}
+@media(max-width:760px){.clutter-checklists{grid-template-columns:1fr;gap:32px;margin-top:32px}.homepage .setup + .product-view{padding-bottom:40px}}
